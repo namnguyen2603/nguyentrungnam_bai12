@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap");
+.landing {
+  background-image: url(../images/landing-background.jpg);
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+}
+.container .row {
+  display: flex;
+  justify-content: center;
+}
+.container .row > input {
+  display: none;
+}
+.container .row > input#register:checked span.register {
+  background-color: white;
+}
+.container .row > input#register:checked ~ .landing-form .register-form {
+  display: block;
+}
+.container .row .landing-content {
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.container .row .landing-content .logo {
+  padding-top: 70px;
+}
+.container .row .landing-content .logo img {
+  width: 70px;
+  height: 70px;
+}
+.container .row .landing-content .landing-content-pretitle h2 {
+  margin-top: 36px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.container .row .landing-content .landing-content-title h1 {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 6.5rem;
+  font-weight: 900;
+  position: relative;
+  top: -40px;
+}
+.container .row .landing-content p {
+  font-size: 1.125rem;
+  line-height: 1.3333333333em;
+  font-weight: 500;
+  display: none;
+}
+.container .row .landing-content .switch {
+  display: flex;
+  position: relative;
+  top: -30px;
+  justify-content: center;
+}
+.container .row .landing-content .switch label {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.container .row .landing-content .switch label span {
+  border: 1px solid #fff;
+  color: #fff;
+  width: 140px;
+  display: block;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}
+.container .row .landing-content .switch label span.login {
+  border-right: none;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+.container .row .landing-content .switch label span.register {
+  border-left: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.container .row .landing-content input:checked ~ .landing-content span {
+  color: #333;
+  background-color: #fff;
+}
+.container .row .landing-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.container .row .landing-form .login-form {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 64px;
+  width: 484px;
+  height: 100%;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+}
+.container .row .landing-form .login-form img {
+  display: none;
+}
+.container .row .landing-form .login-form .login-form-title {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+.container .row .landing-form .login-form .login-form-input .email {
+  position: relative;
+}
+.container .row .landing-form .login-form .login-form-input .email input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px #dedeea solid;
+  border-radius: 12px;
+}
+.container .row .landing-form .login-form .login-form-input .email input:focus {
+  border-color: #615dfa;
+}
+.container .row .landing-form .login-form .login-form-input .email input:focus ~ label {
+  background-color: #fff;
+  transform: translateY(-20px);
+  font-size: 13px;
+  transition: all 0.3s linear;
+  color: grey;
+}
+.container .row .landing-form .login-form .login-form-input .email .placeholder {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #3e3f5e;
+}
+.container .row .landing-form .login-form .login-form-input .password {
+  position: relative;
+}
+.container .row .landing-form .login-form .login-form-input .password input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px #dedeea solid;
+  border-radius: 12px;
+}
+.container .row .landing-form .login-form .login-form-input .password input:focus {
+  border-color: #615dfa;
+}
+.container .row .landing-form .login-form .login-form-input .password input:focus ~ label {
+  background-color: #fff;
+  transform: translateY(-20px);
+  font-size: 13px;
+  transition: all 0.3s linear;
+  color: grey;
+}
+.container .row .landing-form .login-form .login-form-input .password .placeholder {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #3e3f5e;
+}
+.container .row .landing-form .login-form .login-form-action {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+.container .row .landing-form .login-form .login-form-action a {
+  text-decoration: none;
+}
+.container .row .landing-form .login-form .login-form-action .checkbox input {
+  display: none;
+}
+.container .row .landing-form .login-form .login-form-action .checkbox input:checked + i {
+  color: #fff;
+}
+.container .row .landing-form .login-form .login-form-action .checkbox input:checked + i {
+  color: #fff;
+  background-color: #21d2e2;
+  font-weight: 900;
+}
+.container .row .landing-form .login-form .login-form-action .checkbox i {
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+}
+.container .row .landing-form .login-form .login-form-button .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #605dfa;
+  color: white;
+  font-weight: 600;
+}
+.container .row .landing-form .login-form .login-form-contact {
+  text-align: center;
+  margin-top: 30px;
+}
+.container .row .landing-form .login-form .login-form-contact p {
+  font-size: 0.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+.container .row .landing-form .login-form .login-form-contact .facebook {
+  padding: 7px;
+  background-color: #3663d2;
+  color: white;
+  border-radius: 5px;
+}
+.container .row .landing-form .login-form .login-form-contact .twitter {
+  padding: 7px;
+  background-color: #19bcff;
+  color: white;
+  border-radius: 5px;
+}
+.container .row .landing-form .login-form .login-form-contact .twitch {
+  padding: 7px;
+  background-color: #7a5dfa;
+  color: white;
+  border-radius: 5px;
+}
+.container .row .landing-form .login-form .login-form-contact .youtube {
+  padding: 7px;
+  background-color: #fc434f;
+  color: white;
+  border-radius: 5px;
+}
+.container .row .landing-form .register-form {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 64px;
+  width: 484px;
+  height: auto;
+  box-shadow: 0 0 60px 0 rgba(94, 92, 154, 0.12);
+  display: none;
+}
+.container .row .landing-form .register-form a {
+  text-decoration: none;
+}
+.container .row .landing-form .register-form img {
+  display: none;
+}
+.container .row .landing-form .register-form .register-form-title {
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1;
+  font-weight: 700;
+}
+.container .row .landing-form .register-form .register-form-input .email,
+.container .row .landing-form .register-form .register-form-input .password,
+.container .row .landing-form .register-form .register-form-input .username,
+.container .row .landing-form .register-form .register-form-input .repeat {
+  position: relative;
+}
+.container .row .landing-form .register-form .register-form-input .email input,
+.container .row .landing-form .register-form .register-form-input .password input,
+.container .row .landing-form .register-form .register-form-input .username input,
+.container .row .landing-form .register-form .register-form-input .repeat input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px #dedeea solid;
+  border-radius: 12px;
+}
+.container .row .landing-form .register-form .register-form-input .email input:focus,
+.container .row .landing-form .register-form .register-form-input .password input:focus,
+.container .row .landing-form .register-form .register-form-input .username input:focus,
+.container .row .landing-form .register-form .register-form-input .repeat input:focus {
+  border-color: #615dfa;
+}
+.container .row .landing-form .register-form .register-form-input .email input:focus ~ label,
+.container .row .landing-form .register-form .register-form-input .password input:focus ~ label,
+.container .row .landing-form .register-form .register-form-input .username input:focus ~ label,
+.container .row .landing-form .register-form .register-form-input .repeat input:focus ~ label {
+  background-color: #fff;
+  transform: translateY(-20px);
+  font-size: 13px;
+  transition: all 0.3s linear;
+  color: grey;
+}
+.container .row .landing-form .register-form .register-form-input .placeholder {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #3e3f5e;
+}
+.container .row .landing-form .register-form .register-form-action {
+  position: relative;
+  margin: 30px 0;
+}
+.container .row .landing-form .register-form .register-form-action a {
+  text-decoration: none;
+}
+.container .row .landing-form .register-form .register-form-action .checkbox input {
+  display: none;
+}
+.container .row .landing-form .register-form .register-form-action .checkbox input:checked + i {
+  color: #fff;
+}
+.container .row .landing-form .register-form .register-form-action .checkbox input:checked + i {
+  color: #fff;
+  background-color: #21d2e2;
+  font-weight: 900;
+}
+.container .row .landing-form .register-form .register-form-action .checkbox i {
+  border: 1px solid black;
+  padding: 4px;
+  border-radius: 5px;
+  color: white;
+}
+.container .row .landing-form .register-form .register-form-button .btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background-color: #21d2e2;
+  color: white;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
